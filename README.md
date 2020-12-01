@@ -1,6 +1,6 @@
 # CHAIN
 
-A point of sale service using distributed tech using meta mask and GUN, use to list products and sell using Ether
+A point of sale service using distributed tech - meta mask and GUN, used to list products and sell them with Ether.
 
 
 ![in01](https://user-images.githubusercontent.com/68570004/100683137-9759d280-33dc-11eb-962d-15bd8a4f5594.png)
