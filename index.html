@@ -302,7 +302,7 @@
                     }
                 </script>
     
-            <h3><button class="pay-button">PAY</button></h3>
+            <h3><button class="pay-button" ">PAY</button></h3>
     
             <h3><button id="publishButton" onclick="publish()" style="display:none; opacity: 1;" > CREATE LINK</button></h3>
     
@@ -322,24 +322,26 @@
                 <a href="#" style="font-family: arialBlack; font-weight: bold; font-size: 3em;   overflow: hidden; text-overflow: ellipsis;white-space: nowrap; color: rgb(255, 255, 255);">//</a>
                 <a href="#" style="font-family: arialBlack; font-weight: bold; font-size: 3em; color: #ff0d0d;">CHAIN</a><br>
                 <!-- <h1  style="font-family: arial; ; font-size: 4em; opacity: 0.2;" > <a href="https://github.com/libensveto/site">>HOST</a> </h1>       -->
-                <a href="https://github.com/itsvetobaby/CHAIN" >
-                    <img src="github.png" alt="" style="width: 100px; height: 100px; filter: invert(1);">
-                </a> 
-                <canvas id="qr-code" style="align-content: center  ;"></canvas>
-                <script src="qr.js"></script>
-    
-                <script>
-                    var qr;
-                    (function() {
-                            qr = new QRious({
-                            element: document.getElementById('qr-code'),
-                            size: 100,
-                            foreground: '#fff',
-                            background: 'transparent',
-                            value: window.location.href 
-                        });
-                    })();
-                </script>
+                <div class="boxed">
+                    <a href="https://github.com/itsvetobaby/CHAIN" >
+                        <img src="github.png" alt="" style="width: 100px; height: 100px; filter: invert(1);">
+                    </a> 
+                    <canvas id="qr-code" style="align-content: center  ;"></canvas>
+                    <script src="qr.js"></script>
+        
+                    <script>
+                        var qr;
+                        (function() {
+                                qr = new QRious({
+                                element: document.getElementById('qr-code'),
+                                size: 100,
+                                foreground: '#fff',
+                                background: 'transparent',
+                                value: window.location.href 
+                            });
+                        })();
+                    </script>
+                </div>
             </div>
         </div>
 </div>
