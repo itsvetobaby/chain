@@ -172,3 +172,10 @@ textarea, select, input {
 	font-family: arialBlack;
 	src: url(arial-black.ttf) ;
 }
+
+.boxed{
+    padding: 10px;
+    border: 10px solid white;
+    border-radius: 20px;
+    width: 220px;
+}
