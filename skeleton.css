@@ -179,7 +179,7 @@ input[type="button"] {
   border: 1px solid #bbb;
   cursor: pointer;
   box-sizing: border-box;
-  background-color: #ff0d0d;
+  background-color: white;
  }
 .button:hover,
 button:hover,
