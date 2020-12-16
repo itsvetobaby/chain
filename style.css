@@ -2,21 +2,19 @@
 
 h1{
     font-family: 'Open Sans', sans-serif;
-    color: #ffffff;
+    color: #000000;
     /* opacity: 0.3; */
 }
 
-
-
 a{
     text-decoration: none;
-    color: #ffffff;
+    color: #000000;
     /* opacity: 0.3; */
 }
 
 #meta { font-size: small; }
     #savedText {
-      color: #ffffff;
+      color: #000000;
         left: 0;
         right: 0;
         margin-top: 40%;
@@ -57,20 +55,17 @@ a{
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 a button,button,input[type="submit"],input[type="reset"],input[type="button"] {
-    padding-bottom: 05px;
-    margin-top: 5px;
     text-align: center;
     background: none;
     color: #000000;
     font-family: 'Open Sans', sans-serif;
-    border: none;
-    background-color:#fff;
-
-
+    padding: 10px;
+    border: 7px solid rgb(0, 0, 0);
+    border-radius: 20px;
     cursor: pointer;
-    width: 100%;
-    font-size: 20px;
     color: #000000;
+    width: 100%;
+    margin-top: -70px;
 }
 
 textarea, select, input {
@@ -78,7 +73,7 @@ textarea, select, input {
     color: #000000;
     margin-bottom: .5rem;
     box-sizing: border-box;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .links :hover{
@@ -155,9 +150,7 @@ textarea, select, input {
 
    }
 
-   button{
 
-   }
 
    @font-face{
 	font-family: arialBlack;
@@ -166,8 +159,11 @@ textarea, select, input {
 
 .boxed{
     padding: 10px;
-    border: 10px solid white;
+    border: 10px solid rgb(0, 0, 0);
     border-radius: 20px;
     width: min-content;
+}
 
+hr{
+    background-color: black;
 }
