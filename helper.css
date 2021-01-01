@@ -1,0 +1,157 @@
+
+        @font-face{
+            font-family: arialBlack;
+            src: url(arial-black.ttf) ;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(0, 0, 0);
+           
+        }
+
+
+
+        button{
+            border: none;
+            background-color: rgb(255, 0, 0);
+            width: 90%;
+            border-radius: 10px;
+            color: black;
+        }
+
+        .info{
+          
+            padding: 1em;
+     
+
+        }
+
+        .container{
+
+            
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .tcontainer {
+  width: 100%;
+  overflow: hidden; /* Hide scroll bar */
+}
+ 
+/* MIDDLE CONTAINER */
+.ticker-wrap {
+    padding-top: 3em;
+  width: 100%;
+  padding-left: 0%; /* Push contents to right side of screen */
+
+  background-color: none;
+}
+
+/* INNER CONTAINER */
+@keyframes ticker {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-100%, 0, 0); }
+}
+.ticker-move {
+  /* Basically move items from right side of screen to left in infinite loop */
+  display: inline-block;
+  white-space: nowrap;
+  padding-right: 100%;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: ticker;
+  animation-duration: 30s;
+}
+
+
+/* ITEMS */
+.ticker-item{
+  display: inline-block; /* Lay items in a horizontal line */
+  padding: 0 2rem;
+  font-size: 5em;
+    opacity: 0.6;
+  color: rgb(255, 255, 255);
+  font-family: arialBlack;
+}
+
+.svg-icon {
+  width: 2em;
+  height: 2em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #ff0000;
+}
+
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
+
+
+
+h1{
+   
+    color: #000000;
+    /* opacity: 0.3; */
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+    /* opacity: 0.3; */
+}
+
+#meta { font-size: small; }
+    #savedText {
+      color: #000000;
+        left: 0;
+        right: 0;
+        margin-top: 40%;
+        position: fixed;
+        text-align: center;
+        opacity: 0;
+    }
+    .fadeInAndOut {
+        -webkit-animation: fadeinout 2s ease-out forwards;
+        animation: fadeinout 2s ease-out forwards;
+    }
+    @-webkit-keyframes fadeinout { 50% { opacity: 1; } }
+    @keyframes fadeinout { 50% { opacity: 1; } }
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.medium-editor-anchor-preview,
+.medium-editor-toolbar {
+  
+    font-size: 16px;
+    z-index: 2000
+}
+
+.medium-editor-placeholder-relative:after,
+.medium-editor-placeholder:after {
+    content: attr(data-placeholder) !important;
+    white-space: pre;
+    padding: inherit;
+    margin-left: 5px;
+}
+
+.medium-editor-toolbar {
+    left: 0;
+    top: 0;
+    visibility: hidden
+}
+
+
+
+        
+.container {
+    width: 100%;
+    padding: 0;
+}

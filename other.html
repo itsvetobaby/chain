@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="skeleton.css">
+</head>
+<body>
+    <style>
+
+        @font-face{
+            font-family: arialBlack;
+            src: url(arial-black.ttf) ;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(0, 0, 0);
+           
+        }
+
+        .half{
+            width: 45%;
+        }
+
+        button{
+            border: none;
+            background-color: rgb(255, 0, 0);
+            width: 90%;
+            border-radius: 15px;
+            color: black;
+        }
+
+        .info{
+            /* box-shadow: 1px 1px 50px 0 rgba(0, 0, 0, 0.116) ;
+            padding: 1em;
+            border-radius: 10px; */
+
+        }
+
+        .container{
+
+            
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .tcontainer {
+  width: 100%;
+  overflow: hidden; /* Hide scroll bar */
+}
+ 
+/* MIDDLE CONTAINER */
+.ticker-wrap {
+    padding-top: 3em;
+  width: 100%;
+  padding-left: 0%; /* Push contents to right side of screen */
+
+  background-color: none;
+}
+
+/* INNER CONTAINER */
+@keyframes ticker {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-100%, 0, 0); }
+}
+.ticker-move {
+  /* Basically move items from right side of screen to left in infinite loop */
+  display: inline-block;
+  white-space: nowrap;
+  padding-right: 100%;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: ticker;
+  animation-duration: 30s;
+}
+.ticker-move:hover{
+  animation-play-state: paused; /* Pause scroll on mouse hover */
+}
+
+/* ITEMS */
+.ticker-item{
+  display: inline-block; /* Lay items in a horizontal line */
+  padding: 0 2rem;
+  font-size: 5em;
+    opacity: 0.1;
+  color: rgb(255, 255, 255);
+  font-family: arialBlack;
+}
+
+.svg-icon {
+  width: 2em;
+  height: 2em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #ff0000;
+}
+
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
+
+
+
+        
+    </style>
+
+    <div class="container" style="background-color: white; padding-top: 3em; padding-bottom: 5em; border-radius: 20px; margin-top: -2em;">
+        <svg class="svg-icon" viewBox="0 0 20 20">
+            <path fill="none" d="M8.388,10.049l4.76-4.873c0.303-0.31,0.297-0.804-0.012-1.105c-0.309-0.304-0.803-0.293-1.105,0.012L6.726,9.516c-0.303,0.31-0.296,0.805,0.012,1.105l5.433,5.307c0.152,0.148,0.35,0.223,0.547,0.223c0.203,0,0.406-0.08,0.559-0.236c0.303-0.309,0.295-0.803-0.012-1.104L8.388,10.049z"></path>
+        </svg>
+
+   
+            <svg class="svg-icon" viewBox="0 0 20 20" style="float:right" onclick="">
+                <path d="M16.469,8.924l-2.414,2.413c-0.156,0.156-0.408,0.156-0.564,0c-0.156-0.155-0.156-0.408,0-0.563l2.414-2.414c1.175-1.175,1.175-3.087,0-4.262c-0.57-0.569-1.326-0.883-2.132-0.883s-1.562,0.313-2.132,0.883L9.227,6.511c-1.175,1.175-1.175,3.087,0,4.263c0.288,0.288,0.624,0.511,0.997,0.662c0.204,0.083,0.303,0.315,0.22,0.52c-0.171,0.422-0.643,0.17-0.52,0.22c-0.473-0.191-0.898-0.474-1.262-0.838c-1.487-1.485-1.487-3.904,0-5.391l2.414-2.413c0.72-0.72,1.678-1.117,2.696-1.117s1.976,0.396,2.696,1.117C17.955,5.02,17.955,7.438,16.469,8.924 M10.076,7.825c-0.205-0.083-0.437,0.016-0.52,0.22c-0.083,0.205,0.016,0.437,0.22,0.52c0.374,0.151,0.709,0.374,0.997,0.662c1.176,1.176,1.176,3.088,0,4.263l-2.414,2.413c-0.569,0.569-1.326,0.883-2.131,0.883s-1.562-0.313-2.132-0.883c-1.175-1.175-1.175-3.087,0-4.262L6.51,9.227c0.156-0.155,0.156-0.408,0-0.564c-0.156-0.156-0.408-0.156-0.564,0l-2.414,2.414c-1.487,1.485-1.487,3.904,0,5.391c0.72,0.72,1.678,1.116,2.696,1.116s1.976-0.396,2.696-1.116l2.414-2.413c1.487-1.486,1.487-3.905,0-5.392C10.974,8.298,10.55,8.017,10.076,7.825"></path>
+            </svg>
+  
+
+        <br>
+
+        <br>
+
+        <div class="info">
+            <a href=""><h4>Nnox</h4></a>
+            <a href=""><h1>Tilo</h1></a>
+            <H2>$11.93</H2>
+            <h5>Tiny Tiny Info | 34/12/2020</h5>
+        </div>
+
+        <br>
+
+        <div class="info">
+
+            <div style="width:50%; display:inline-block;"><h3>Total - $22.32</h3></div><div style="width:50%; display:inline-block;"><button>PAY</button></div>
+        </div>
+
+        <br>
+
+
+
+        
+    </div>
+
+    <div class="tcontainer"><div class="ticker-wrap"><div class="ticker-move">
+        <div class="ticker-item">// // // // //INCARTI //</div>
+        <div class="ticker-item">// // // // //INCARTI //</div>
+        <div class="ticker-item">// // // // //INCARTI //</div>
+        <div class="ticker-item">//INCARTI  // // // //INCARTI //</div>
+      </div>
+    </div>
+
+
+
+
+
+
+</body>
+</html>
