@@ -6,7 +6,7 @@
  *    user zoom.
  */
 
-html {
+ html {
   font-family: sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -424,4 +424,14 @@ table {
 td,
 th {
   padding: 0;
+
+}
+
+th, td {
+  padding: .5em 1em;
+  padding-right: 10em;
+}
+
+th:first-child, td:first-child {
+  display: none;
 }
